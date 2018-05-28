@@ -19,7 +19,7 @@ font-weight: 700; font-size: 19px; text-align: center; cursor: pointer;}
 
 
 /*******HEADER*/
-header {width: 100%; height: 140px;}
+header {width: 100%; min-height: 140px;}
 .header-wrap {max-width: 1420px; width: 100%; height: 100%; margin: 0 auto; padding: 0 10px;}
 .logo {display: flex; align-items: center; height: 100%;}
 .menu {height: 100%; display: flex; align-items: center;}
@@ -37,7 +37,7 @@ header {width: 100%; height: 140px;}
 
 
 /*********FOOTER**/
-footer {width: 100%; height: 270px;}
+footer {width: 100%; min-height: 270px;}
 .footer-wrap {margin: 0 auto; max-width: 1400px; width: 100%; padding: 50px; height: 100%; display: flex; align-items: flex-end;}
 .footer-aside {width: 25%; float: left;}
 .footer-aside ul li {margin-bottom: 30px;}
@@ -55,7 +55,7 @@ footer {width: 100%; height: 270px;}
 
 
 /********CONTACT**/
-#contact {width: 100%; height: 510px;}
+#contact {width: 100%; min-height: 510px;}
 #contact .wrapper-wide {height: 100%;}
 .say-hello {width: 50%; height: 100%; float: left; background: #424242; padding: 60px; display: flex; align-items: center;}
 .say-hello h2 {margin-bottom: 15px; color: #fff;}
@@ -309,4 +309,67 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 #socials-logo .cont-socials ul {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;}
 #socials-logo .cont-socials ul li a {font-size: 45px; color: #98999b;}
 #socials-logo .cont-socials ul li a:hover {opacity: .7;}
-#socials-logo .cont-logo {text-align: center;}
+#socials-logo .cont-logo {width: 100%; text-align: center;}
+
+
+
+
+
+/************RESPONSIVE***/
+
+@media only screen and (max-width: 800px) {
+  .logo {float: none; margin: 0 auto; max-width: 470px; width: 100%;}
+  .menu {float: none; margin: 0 auto; max-width: 400px;}
+
+  #services-section .wrapper {padding: 0 10px;}
+  #services-section ul li a {font-size: 18px; line-height: 22px;}
+  #services-section ul li a .services-show {width: 600px;}
+  #services-section ul li a .services-show p {font-size: 16px; line-height: 22px;}
+  #services-section ul li a .services-show.outdoor-show {left: -10px;}
+  #services-section ul li a .services-show.outdoor-show .services-img {left: 15px;}
+  #services-section ul li a .services-show.pavers-show {left: -190px;}
+  #services-section ul li a .services-show.pavers-show .services-img {left: 180px;}
+  #services-section ul li a .services-show.natural-show {left: -300px;}
+  #services-section ul li a .services-show.natural-show .services-img {left: 305px;}
+  #services-section ul li a .services-show.landscape-show {left: -480px;}
+  #services-section ul li a .services-show.landscape-show .services-img {left: 480px;}
+
+  .mission {border: none; border-bottom: 2px solid #308a20; text-align: left;}
+  #mission-vision h3 {font-size: 20px; margin-bottom: 30px;}
+  #mission-vision p {line-height: 28px; font-size: 20px;}
+  .mission, .vision {min-height: 390px;}
+
+  .services-box,
+  .maintenance-box {float: none; width: 100%;}
+
+  .say-hello,
+  .socials {float: none; width: 100%;}
+
+  .footer-aside,
+  .footer-mid {width: 100%; float: none;}
+  .footer-wrap {padding: 25px; display: block;}
+  .footer-aside ul.copyrights li p {text-align: center;}
+  .footer-aside ul.ul-contact li p {display: block; text-align: center;}
+  .footer-aside ul li {max-width: 400px; width: 100%; margin: 0 auto; margin-bottom: 30px;}
+  .footer-mid {margin: 30px 0}
+  .footer-mid ul li {display: block; width: 100%; text-align: center; margin-bottom: 30px;}
+  .footer-mid ul li:last-child {margin-bottom: 0;}
+}
+
+@media only screen and (max-width: 414px) {
+  .logo {display: block; text-align: center;}
+  .logo a {display: block;}
+  .menu {display: none;}
+  .headline {font-size: 34px;}
+  .section-title {font-size: 32px;}
+  .gem-box {padding: 20px 0;}
+  .mission {padding: 0;}
+  #mission-vision .wrapper {padding: 20px;}
+
+  .say-hello {padding: 30px;}
+  .say-hello p {font-size: 18px;}
+  #contact input, #contact textarea {max-width: none; width: 100%;}
+  .say-hello form ul li:last-child {text-align: center;}
+  #mission-vision p {font-size: 18px; line-height: 24px;}
+  .mission, .vision {min-height: 330px;}
+}
