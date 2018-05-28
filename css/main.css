@@ -62,12 +62,12 @@ footer {width: 100%; height: 270px;}
 .say-hello p {color: #308a20; line-height: 24px; margin-bottom: 20px;}
 .say-hello .btn:hover {background: #308a20; color: #424242;}
 .socials {width: 50%; height: 100%; float: left; margin-right: -4px;}
-input {max-width: 265px; width: 100%;}
-input, textarea {width: 100%; height: 40px; line-height: 40px; font-size: 19px; background: transparent; border: none; border-bottom: 2px solid #fefeff; color: #fefeff;}
-input.cont-name {margin-right: 30px;}
-.say-hello input::placeholder,
-.say-hello textarea::placeholder  {color: #fefeff}
-textarea {resize: none; font-family: 'Montserrat', sans-serif; font-size: 19px; font-weight: 400; overflow: hidden;}
+#contact input {max-width: 265px; width: 100%;}
+#contact input, textarea {width: 100%; height: 40px; line-height: 40px; font-size: 19px; background: transparent; border: none; border-bottom: 2px solid #fefeff; color: #fefeff;}
+#contact input.cont-name {margin-right: 30px;}
+#contact input::placeholder,
+#contact textarea::placeholder  {color: #fefeff}
+#contact textarea {resize: none; font-family: 'Montserrat', sans-serif; font-size: 19px; font-weight: 400; overflow: hidden;}
 .say-hello ul li:first-child {margin-bottom: 30px;}
 .say-hello ul li:nth-child(2) {margin-bottom: 40px;}
 .socials ul li {height: 255px; width: 50%; float: left;}
@@ -269,3 +269,44 @@ span.zoom:hover {opacity: .5;}
 .affiliations ul li a.aff-ncma {left: 90px; bottom: 70px;}
 .affiliations ul li a.aff-nalp {right: 90px; top: 70px;}
 .affiliations ul li a.aff-fngla {left: 90px; top: 70px;}
+
+
+
+/********CONTACT PAGE***/
+#contact-form {width: 100%; padding: 60px 0 100px;}
+.contact-form-wrap {margin: 0 auto; max-width: 870px; width: 100%;}
+.contact-title h2 {margin-bottom: 55px; text-align: center; color: #308a20}
+.contact-title p {line-height: 24px; padding: 0 20px; text-align: center;}
+.contact-title {margin-bottom: 100px;}
+#contact-form input {max-width: 265px; width: 100%;}
+#contact-form input {width: 100%; height: 40px; line-height: 40px; font-size: 19px; background: transparent; border: none; border-bottom: 2px solid #818285; color: #818285;}
+#contact-form textarea {width: 100%; height: 120px; font-size: 19px; background: transparent; border: none; border-bottom: 2px solid #818285; color: #818285;}
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {color: #818285}
+#contact-form textarea {margin-top: 30px; resize: none; font-family: 'Montserrat', sans-serif; font-size: 19px; font-weight: 400; overflow: hidden;}
+.form-input ul li:first-child {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;}
+.form-input ul li:last-child {margin-top: 80px;}
+input[type='number'] {-moz-appearance: textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+.form-input .btn {margin: 0 auto; display: block;}
+
+
+/*******MAP**/
+#map {width: 100%;}
+.map-address {width: 100%; height: 600px;}
+.map-address .map-box,
+.map-address .address-box {width: 50%; height: 100%;}
+.map-address .address-box {background: #308a20; padding: 80px 60px;}
+.address-box .footer-aside {float: none; width: 100%;}
+.address-box .footer-aside p,
+.address-box .footer-aside a {color: #fff;}
+
+
+/*********SOCIALS LOGO**/
+#socials-logo {width: 100%; padding: 110px 0 150px;}
+#socials-logo .cont-socials {max-width: 600px; width: 100%; margin: 0 auto; margin-bottom: 170px;}
+#socials-logo .cont-socials ul {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;}
+#socials-logo .cont-socials ul li a {font-size: 45px; color: #98999b;}
+#socials-logo .cont-socials ul li a:hover {opacity: .7;}
+#socials-logo .cont-logo {text-align: center;}
