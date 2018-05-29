@@ -57,9 +57,10 @@ footer {width: 100%; min-height: 270px;}
 /********CONTACT**/
 #contact {width: 100%; min-height: 510px;}
 #contact .wrapper-wide {height: 100%;}
-.say-hello {width: 50%; height: 100%; float: left; background: #424242; padding: 60px; display: flex; align-items: center;}
+.say-hello {width: 50%; height: 510px; float: left; background: #424242; padding: 60px; display: flex; align-items: center;}
 .say-hello h2 {margin-bottom: 15px; color: #fff;}
 .say-hello p {color: #308a20; line-height: 24px; margin-bottom: 20px;}
+.say-hello ul li.name-mail {display: flex; justify-content: space-between;}
 .say-hello .btn:hover {background: #308a20; color: #424242;}
 .socials {width: 50%; height: 100%; float: left; margin-right: -4px;}
 #contact input {max-width: 265px; width: 100%;}
@@ -316,8 +317,15 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 
 /************RESPONSIVE***/
+@media only screen and (max-width: 1024px) {
+  .adventage-txt {padding: 0 25px;}
+  .source-box {margin-bottom: 40px;}
+  .source-img {margin: 10px 0 15px;}
+  #source {padding: 50px 0 20px;}
+}
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 992px) {
   .logo {float: none; margin: 0 auto; max-width: 470px; width: 100%;}
   .menu {float: none; margin: 0 auto; max-width: 400px;}
 
@@ -352,9 +360,55 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
   .footer-aside ul.ul-contact li p {display: block; text-align: center;}
   .footer-aside ul li {max-width: 400px; width: 100%; margin: 0 auto; margin-bottom: 30px;}
   .footer-mid {margin: 30px 0}
-  .footer-mid ul li {display: block; width: 100%; text-align: center; margin-bottom: 30px;}
-  .footer-mid ul li:last-child {margin-bottom: 0;}
+  .footer-mid ul {display: flex; justify-content: space-around;}
+  .footer-mid ul li {display: inline-block;}
 }
+
+
+@media only screen and (max-width: 768px) {
+  .gem-box {padding: 20px;}
+  .gem-box h2 {font-size: 36px;}
+  .gem-box p {font-size: 16px; }
+
+  .say-hello {padding: 40px;}
+  .say-hello h2 {font-size: 38px;}
+  .say-hello p {font-size: 16px;}
+
+  .adventage-txt,
+  .adventage-slider {float: none; width: 100%;}
+  .adventage-txt {margin: 20px 0;}
+  .section-title {font-size: 36px;}
+  .adventage-txt p {font-size: 16px; text-align: left;}
+  .adv-slider-title {text-align: center; font-size: 28px;}
+
+  #about {padding: 30px 0;}
+  .quote-txt p {font-size: 24px; line-height: 38px;}
+  #about h2 {margin-bottom: 25px;}
+  #about-mission-vision h3 {margin-bottom: 30px;}
+  #about-mission-vision .wrapper {padding: 20px 0;}
+  .gem-team::before {height: 0;}
+  .gem-team,
+  .our-serv-green {padding: 25px 40px;}
+  #our-services {padding: 30px 0;}
+  .affiliations-btns ul li {margin-top: 20px;}
+  .affiliations-btns {margin-top: 50px;}
+  #prof-affil {padding: 30px 0 50px;}
+
+  #socials-logo .cont-socials {margin-bottom: 80px;}
+  #socials-logo {padding: 25px 0;}
+  #contact-form form {padding: 30px;}
+  #contact-form form ul li {display: block;}
+  #contact-form form input {display: block; max-width: 800px; width: 100%; margin-bottom: 20px;}
+  #contact-form {padding: 30px;}
+  .contact-title {margin-bottom: 40px;}
+
+  .map-address .map-box, .map-address .address-box {width: 100%; float: none; height: 100%;}
+  .map-address {height: auto;}
+  .map-box iframe {width: 100%;}
+  .map-address .address-box {padding: 50px 0;}
+  #socials-logo .cont-socials {margin-bottom: 25px;}
+}
+
 
 @media only screen and (max-width: 414px) {
   .logo {display: block; text-align: center;}
@@ -367,9 +421,50 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
   #mission-vision .wrapper {padding: 20px;}
 
   .say-hello {padding: 30px;}
-  .say-hello p {font-size: 18px;}
+  .say-hello h2 {font-size: 30px;}
   #contact input, #contact textarea {max-width: none; width: 100%;}
   .say-hello form ul li:last-child {text-align: center;}
   #mission-vision p {font-size: 18px; line-height: 24px;}
-  .mission, .vision {min-height: 330px;}
+  .mission, .vision {min-height: 330px}
+  #mission-vision p {font-size: 16px;}
+
+  .footer-mid ul {display: block;}
+  .footer-mid ul li {display: block; width: 100%; text-align: center; margin-bottom: 30px;}
+  .footer-mid ul li:last-child {margin-bottom: 0;}
+
+  #adventage {padding: 20px 0;}
+  #adventage h2 {margin-bottom: 20px;}
+  .section-title {font-size: 28px;}
+  .headline {font-size: 30px;}
+  .adventage-txt {padding: 0;}
+  .adventage-txt.pillars p span {font-size: 20px;}
+  .adv-slider-title {font-size: 24px;}
+  .source-box {width: 100%; margin: 0;}
+  .source-box h3 {font-size: 18px;}
+
+  .quote-txt p {font-size: 18px; line-height: 26px;}
+  #about-mission-vision .wrapper {padding: 20px;}
+  #about-mission-vision h3 {font-size: 20px; margin-bottom: 15px;}
+  .vision {padding: 0; margin-top: 20px;}
+  #about-mission-vision p {font-size: 16px;}
+  .gem-team {padding: 20px;}
+  .our-serv-green {padding: 20px;}
+  .affiliations-btns ul li {margin-right: 0;}
+  .affiliations ul li a.aff-icpi {right: 10px; bottom: 10px;}
+  .affiliations ul li a.aff-ncma {left: 10px; bottom: 10px;}
+  .affiliations ul li a.aff-nalp {right: 10px; top: 10px;}
+  .affiliations ul li a.aff-fngla {left: 10px; top: 10px;}
+  .affiliations::before {height: 230px; top: 100px;}
+  .affiliations::after {width: 230px; left: 50px;}
+  .affiliations img {width: 100%;}
+
+  #contact-form form {padding: 10px;}
+  .contact-title h2 {margin-bottom: 20px;}
+  .contact-title p {font-size: 16px;}
+  .footer-aside ul.ul-contact li p {font-size: 16px;}
+  #contact-form {padding: 30px 10px;}
+  .footer-aside ul li {margin-bottom: 10px;}
+  .footer-aside ul li.rights {margin-bottom: 10px;}
+  .say-hello p {font-size: 16px;}
+
 }
